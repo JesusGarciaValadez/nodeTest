@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>List of The Best Artists in the World</title>
+    </head>
+    <body>
+        <h1>Artists</h1>
+        <ul>
+            <% artists.forEach( function( artist ) { %>
+            <li><a href="artists/<%= artist._id%>" title="<%=artist.name%>"><%=artist.name%></a></li>
+            <% } ); %>
+        </ul>
+    </body>
+</html>
